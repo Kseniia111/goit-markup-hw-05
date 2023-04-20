@@ -120,21 +120,9 @@ button {
     color: var(--ocean);
 }
 
-.menu-container {
-    position: relative;
-}
-
-.header-link-text::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--ocean);
-    position: absolute;
-}
-
 .header-link-text {
+    position: relative;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -143,6 +131,25 @@ button {
 
     display: block;
     padding: 24px 0;
+}
+
+.header-link-text::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+   
+    position: absolute;
+}
+
+.header-link-text.current::after,
+.header-link-text:hover::after,
+.header-link-text:focus::after {
+    background-color: var(--ocean);
+    /*color: var(--ocean);*/
 }
 
 .header-lists {
