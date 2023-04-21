@@ -521,3 +521,16 @@ button {
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
 }
+.portfolio-wrapper {
+    position: relative;
+}
+.portfolio-inner {
+    position: absolute;
+    bottom: 0;
+    
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: var(--cloud);
+    background-color: var(--iris);
+}
